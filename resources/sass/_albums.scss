@@ -1,0 +1,58 @@
+div.albums {
+
+    .error {
+
+      background: black;
+      color: red;
+    }
+    .container {
+
+      display: flex;
+      flex-wrap: wrap;
+
+      .album-box {
+
+          display: flex;
+
+          margin: auto;
+          margin-bottom: 20px;
+
+          width: 400px;
+
+          overflow: hidden;
+
+          background: #ddd;
+          border: 2px solid black;
+          border-radius: 25px;
+
+          & > * {
+
+            position: relative;
+
+            margin: auto;
+            text-align: center;
+          }
+          div.data {
+
+            display: flex;
+            flex-direction: column;
+
+            margin: auto;
+            margin-left: 0;
+
+            p.genre,
+            i.heart {
+
+              cursor: pointer;
+            }
+          }
+          img.poster {
+
+            margin-left: 0;
+
+            max-width: 200px;
+            height: auto;
+          }
+      }
+    }
+}
